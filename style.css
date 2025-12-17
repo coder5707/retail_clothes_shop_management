@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+}
+
+/* Login page */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 6px;
+    width: 320px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.login-container h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* App Layout */
+.topbar {
+    background: #34495e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.topbar-right span {
+    margin-right: 15px;
+}
+
+.wrapper {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.sidebar {
+    width: 220px;
+    background: #2c3e50;
+    padding-top: 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #1abc9c;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+}
+
+.footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+/* Generic */
+.card {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #1abc9c;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn.small {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn.danger {
+    background: #e74c3c;
+}
+
+.btn.secondary {
+    background: #3498db;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+th {
+    background: #f9fafb;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Alerts */
+.alert {
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.alert.error {
+    background: #ffe5e5;
+    color: #c0392b;
+}
+
+.alert.success {
+    background: #e6ffed;
+    color: #27ae60;
+}
+
+/* Headings */
+h2, h3 {
+    margin-top: 0;
+}
